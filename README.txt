@@ -1,5 +1,5 @@
 Hi, im Ariel. For this portfolio i'm using 'Hyperspace' template, created by AJ
-aj@lkn.io | @ajlkn. Downloaded from https://html5up.net/ on january 2, 2024. Instead of a readme file, ill just copy the author's one bellow.
+aj@lkn.io | @ajlkn. Downloaded from https://html5up.net/ on january 2, 2024. Instead of writing a readme file, ill just copy the author's one bellow.
 
 -----------------------------------------------------------
 
