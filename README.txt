@@ -1,9 +1,3 @@
-Hi, im Ariel. For this portfolio i'm using 'Hyperspace' template, created by AJ
-aj@lkn.io | @ajlkn. Downloaded from https://html5up.net/ on january 2, 2024. Instead of writing a readme file, ill just copy the author's one bellow.
-
------------------------------------------------------------
-
-
 Hyperspace by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
