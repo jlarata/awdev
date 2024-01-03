@@ -4099,6 +4099,44 @@ video#bgVideoA {
 		filter: opacity(50%);    
 }
 
+#bgVideoB {
+	border-radius: 50px;
+	position: relative;
+	padding: 5%;
+	right: 0;
+	bottom: 0;
+	width: inherit;
+	/*min-width: 100%;*/
+	height: inherit;
+	/*min-height: 100%;*/
+	z-index: -1;
+	background-size: cover;
+	
+	animation-name: skills-video;
+    animation-duration: 10s;
+	-webkit-filter: opacity(50%); /* Safari 6.0 - 9.0 */
+		filter: opacity(50%);    
+}
+
+#bgVideoC {
+	border-radius: 50px;
+	position: relative;
+	padding: 5%;
+	right: 0;
+	bottom: 0;
+	width: inherit;
+	/*min-width: 100%;*/
+	height: inherit;
+	/*min-height: 100%;*/
+	z-index: -1;
+	background-size: cover;
+	
+	animation-name: skills-video;
+    animation-duration: 10s;
+	-webkit-filter: opacity(50%); /* Safari 6.0 - 9.0 */
+		filter: opacity(50%);    
+}
+
 @keyframes skills-video {
     0% {
         /*left: -100px;*/

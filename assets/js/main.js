@@ -190,6 +190,8 @@
 })(jQuery);
 
 var skillvida = document.getElementById('bgVideoA');
+var skillvidb = document.getElementById('bgVideoB');
+var skillvidc = document.getElementById('bgVideoC');
 
 skillvida.addEventListener('ended', function(e) {
   // get the active source and the next video source.
@@ -205,3 +207,25 @@ skillvida.addEventListener('ended', function(e) {
   skillvida.src = nextsource.src;
   skillvida.play();
 });
+
+skillvidb.addEventListener('ended', function(e) {
+	var activesource = document.querySelector("#bgVideoB source.active");
+	var nextsource = document.querySelector("#bgVideoB source.active + source") || document.querySelector("#bgVideoB source:first-child");
+
+	activesource.className = "";
+	nextsource.className = "active";
+	
+	skillvidb.src = nextsource.src;
+	skillvidb.play();
+  });
+
+  skillvidc.addEventListener('ended', function(e) {
+	var activesource = document.querySelector("#bgVideoC source.active");
+	var nextsource = document.querySelector("#bgVideoC source.active + source") || document.querySelector("#bgVideoC source:first-child");
+
+	activesource.className = "";
+	nextsource.className = "active";
+	
+	skillvidc.src = nextsource.src;
+	skillvidc.play();
+  });
