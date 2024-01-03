@@ -2006,7 +2006,7 @@ input, select, textarea {
 			}
 
 			.features section:nth-child(2n) {
-				border-left: solid 1px rgba(255, 255, 255, 0.15);
+				border-left: solid 0px rgba(255, 255, 255, 0.15);
 			}
 
 			.features section .icon {
@@ -2183,7 +2183,7 @@ input, select, textarea {
 			}
 
 				.features section {
-					border-top-width: 1px !important;
+					border-top-width: 0px !important;
 					border-left-width: 0 !important;
 					width: 100%;
 				}
@@ -3913,3 +3913,44 @@ input, select, textarea {
 			}
 
 		}
+
+.skills-video {
+	border: solid 1px rgba(255, 255, 255, 0.15);
+	height: 210px;
+	margin-left: -5.5em;
+	margin-top: -2.5em;
+	margin-right: -2.5em;
+	z-index: -1;
+	position: relative;
+}
+
+	@media screen and (max-width: 980px) {
+
+		.skills-video {
+		margin-left: -5.5em;
+		margin-top: -6em;
+		}
+
+	}
+
+	@media screen and (max-width: 730px) {
+
+		.skills-video {
+		margin-right: .5em;
+		margin-left: -4.5em;
+		margin-top: -4em;
+		margin-bottom: 1em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.skills-video {
+		margin-right: .5em;
+		margin-left: .5em;
+		margin-top: -4em;
+		margin-bottom: 1em;
+		}
+
+	}
