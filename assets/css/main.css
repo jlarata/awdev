@@ -4038,6 +4038,28 @@ body.is-preload #sidebar nav ul li {
 
 }
 
+.skills-video-and-summary {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	/* margin-left:; 
+	margin-top: ;
+	margin-right:;
+	z-index:;
+	position: ; */
+}
+
+.skills-video-and-summary h3 {
+	margin-left: -3em;
+}
+
+.skils-desc-small-screen {
+	display: none;
+}
+
+
 .skills-video {
 	height: 210px;
 	margin-left: -5.5em;
@@ -4055,17 +4077,24 @@ body.is-preload #sidebar nav ul li {
 		margin-left: -5.5em;
 		margin-top: -6em;
 	}
+	
+	.skils-desc-small-screen {
+		display: block;
+	}
+
+	.skils-desc-big-screen {
+		display: none;
+	}
 
 }
 
 @media screen and (max-width: 730px) {
 
 	.skills-video {
-		margin-right: .5em;
-		margin-left: -4.5em;
-		margin-top: -4em;
-		margin-bottom: 1em;
+		width: 250px;
+		left: 0px;
 	}
+	
 
 }
 
@@ -4076,6 +4105,30 @@ body.is-preload #sidebar nav ul li {
 		margin-left: .5em;
 		margin-top: -4em;
 		margin-bottom: 1em;
+	}
+	.skills-video-and-summary {
+		margin-left: 1em;
+	}
+
+}
+
+@media screen and (max-width: 440px) {
+
+	.skills-video {
+		margin-right: .01em;
+		margin-left: -2em;
+		margin-top: -.01em;
+		margin-bottom: -.01em;
+	}	
+}
+
+@media screen and (max-width: 280px) {
+
+	.skills-video {
+		display: none;
+	}
+	.skills-video-and-summary {
+		display: none;
 	}
 
 }
@@ -4135,6 +4188,14 @@ video#bgVideoA {
     animation-duration: 10s;
 	-webkit-filter: opacity(50%); /* Safari 6.0 - 9.0 */
 		filter: opacity(50%);    
+}
+
+@media screen and (max-width: 440px) {
+
+	video#bgVideoA {
+		border-radius: 100%;
+		height: auto;
+	}		
 }
 
 @keyframes skills-video {
