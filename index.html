@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -203,23 +204,26 @@
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<!--<form method="post" action="#"></form>-->
+									<form id="contactForm">
 										<div class="fields">
 											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<label for="email">Email</label>
+												<input required="true" type="text" name="email" id="email" />
 											</div>
 											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<label for="name">Name</label>
+												<input required="true" type="text" name="name" id="name" />
 											</div>
+											
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												<textarea required="true" name="message" id="message" rows="5"></textarea>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><button type="submit" class="button submit">Send Message</button></li>
+											<!--<li><button type="submit" class="button submit" onClick="pruebitas()">Send Message</button></li>-->
 										</ul>
 									</form>
 								</section>
@@ -267,6 +271,7 @@
 			</footer>
 
 		<!-- Scripts -->
+			<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
