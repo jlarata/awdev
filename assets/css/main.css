@@ -4246,13 +4246,16 @@ video#bgVideoA {
 	position: relative;
 }
 
+.unityblack {
+	transform: scale(1.5) !important;
+	background: rgb(0, 0, 0) !important;
+}
+
 
 @media screen and (max-width: 980px) {
 	.features section .icon.medium {
 		top: -2em;
 	}
-
-	
 	.icon.medium:before {
 		top: -.5px;
 	}
@@ -4290,5 +4293,5 @@ video#bgVideoA {
 	}
 	.icon.medium:before {
 		top: -.5px;
-	}	
+	}
 }
