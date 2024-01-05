@@ -2654,6 +2654,8 @@ input[type="radio"]+label:before {
 	font-size: 1.25em;
 }
 
+
+
 .wrapper.style1 .icon.major:before {
 	color: #5e42a6;
 }
@@ -4215,4 +4217,78 @@ video#bgVideoA {
 		filter: opacity(50%);
         
     }
+}
+
+.features section .icon.medium {
+	transform: scale(2);
+	left: 5em;
+	top: 1em;
+	opacity: 1;
+	position: relative;
+}
+
+.icon.medium {
+	width: 2.1em;
+	height: 2.1em;
+	display: block;
+	background: #b74e91;
+	border-radius: 100%;
+	color: #fffbfb;
+	text-align: center;
+	line-height: 2em;
+	margin: 0 0 1.3em 0;
+}
+
+.icon.medium:before {
+	display: block;
+	top: 1px;
+	font-size: 2em;
+	position: relative;
+}
+
+
+@media screen and (max-width: 980px) {
+	.features section .icon.medium {
+		top: -2em;
+	}
+
+	
+	.icon.medium:before {
+		top: -.5px;
+	}
+
+}
+
+@media screen and (max-width: 730px) {
+	.features section .icon.medium {
+		transform: scale(1.5);
+		top: -1em;
+		left: 3em
+	}
+	.icon.medium:before {
+		top: -.5px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.features section .icon.medium {
+		transform: scale(1.5);
+		top: 1em;
+		left: 4.5em
+	}
+	.icon.medium:before {
+		top: -.5px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+
+	.features section .icon.medium {
+		transform: scale(1.5);
+		top: 5em;
+		left: 3.5em
+	}
+	.icon.medium:before {
+		top: -.5px;
+	}	
 }
